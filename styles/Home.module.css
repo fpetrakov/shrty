@@ -16,7 +16,7 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  border-top: 2px solid var(--clr-light-gray);
   justify-content: center;
   align-items: center;
 }
@@ -25,17 +25,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  flex: 1;
 }
 
-.title a {
-  color: #0070f3;
+.title span {
+  color: var(--clr-blue);
+}
+
+.link {
   text-decoration: none;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
+.link:hover,
+.link:focus,
+.link:active {
   text-decoration: underline;
 }
 
@@ -56,61 +59,62 @@
   font-size: 1.5rem;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
+.form {
   margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
+  padding: 1rem;
   color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
+  width: 100%;
+  display: flex;
+  max-width: 500px;
   font-size: 1.5rem;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.input {
+  padding: 0 1rem;
+  outline: none;
+  font-size: inherit;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  width: 100%;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.input:hover,
+.input:focus,
+.input:active {
+  border-color: var(--clr-blue);
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+.button {
+  border: none;
+  border-radius: 10px;
+  background-color: var(--clr-blue);
+  color: var(--clr-white);
+  padding: 1rem 1.5rem;
+  margin-left: 1rem;
+  font-size: inherit;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--clr-dark-blue);
+}
+
+@media (max-width: 368px) {
+  .container {
+    padding: 0 1em;
+  }
+
+  .form {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .input {
+    padding: 0 0.5rem;
+  }
+
+  .button {
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
   }
 }

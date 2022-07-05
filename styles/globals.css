@@ -1,3 +1,10 @@
+:root {
+  --clr-white: white;
+  --clr-blue: #0070f3;
+  --clr-dark-blue: #0050ac;
+  --clr-light-gray: #eaeaea;
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +20,9 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.border {
+  border: 2px solid var(--clr-light-gray);
+  border-radius: 10px;
 }
