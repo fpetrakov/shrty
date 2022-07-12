@@ -1,6 +1,5 @@
 import classNames from "classnames";
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -18,7 +17,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Paste your link and press the button{" "}
+          Paste your link, press the button and you will get your link shortened
         </p>
 
         <form className={classNames(styles.form, "border")}>
